@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.bg-primary {
+    background-color: #2D7FC3 !important;
+}
+
+.logo {
+    max-height: 97px;
+    width: auto;
+}
+
+.top-bar {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.dateTime .title {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 23px;
+}
+
+.cTime .title {
+    margin-bottom: 0;
+    color: #fff;text-align: center;
+    font-size: 23px;
+}
+
+.text-primary {
+    color: #2D7FC3 !important;
+}
+
+.cNumber h3 {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.form-checkTime input {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: none;
+    line-height: 1;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.form-checkTime .input-group {
+    background: #f1f2f3;
+    min-height: 45px;
+    border-radius: 3px;
+    display: flex;
+    transition: .2s;
+    overflow: hidden;
+    border: 0 solid transparent;
+}
+
+.form-checkTime .btn {
+    min-height: 45px;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #2D7FC3;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.come-after .title {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 17px;
+}
+
+.drName {
+    color: #2D7FC3;
+    font-family: "Poppins", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.heading-title {
+    color: #000000;
+    font-family: "Roboto", Sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.social-links li {
+    background: #3b5998;
+    padding: 10px;
+    margin-right: 6px;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    text-align: center;
+    line-height: 0;
+    font-size: 13px;
+}
+
+.social-links li a {
+    color: #fff;
+}
+
+.instagram {
+    background: #dd1466 !important;
+}
+
+.twitter {
+    background: #1da1f2 !important;
+}
+
+.linkedin {
+    background: #0077b5 !important;
+}
+
+.youtube {
+    background: #cd201f !important;
+}
+
+
+/* resposive css */
+
+@media (max-width: 768px) {
+    .drimage {
+            max-height: 120px;
+    }.drName{
+                font-size: 19px;
+    }.heading-title{
+                font-size: 11px;
+    }.dateTime .title{
+            font-size: 15px;
+                display: grid;
+                text-align: center;
+                line-height: 29px;
+    }.cTime .title{
+                font-size: 15px;
+    }.form-checkTime .input-group {
+         
+        display: block;}
+        .input-group .btn,
+                .input-group .form-control
+               {width: 100%;}
+               .ftext{
+                    font-size: 13px;
+                        text-align: center;
+               }
+}
