@@ -20,8 +20,12 @@ Route::get('/', [VisitorController::class, 'index']);
 Route::post('/check-my-time', [VisitorController::class, 'check_my_time'])->name('check_my_time');
 Route::post('/update-data', [VisitorController::class, 'update_data'])->name('update_data');
 
-Auth::routes();
-
+Auth::routes([
+  'register' => false, // Registration Routes...
+  'reset' => false, // Password Reset Routes...
+  'verify' => false, // Email Verification Routes...
+]);
+Route::get('/admin', [HomeController::class, 'index'])->name('admin');
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::post('/average-time', [HomeController::class, 'average_time'])->name('average_time');
 Route::post('/start_opd', [HomeController::class, 'start_opd'])->name('start_opd');
