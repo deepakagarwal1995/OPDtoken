@@ -31,3 +31,10 @@ Route::get('/change-password', [HomeController::class, 'changePassword'])->name(
 Route::post('/change-password', [HomeController::class, 'updatePassword'])->name('update-password');
 
 
+Route::get('migrate', function () {
+    Artisan::call('view:clear');
+    Artisan::call('route:clear');
+    Artisan::call('config:clear');
+    Artisan::call('cache:clear');
+    Artisan::call('migrate');
+});
